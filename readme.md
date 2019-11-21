@@ -1,5 +1,5 @@
 #   Technologies Used:  
-MySQL, Javascript, Node, Express, Handlebars, Object-Relational Mapper (ORM), Model View Controller (MVC)
+MySQL, Javascript, Node, Express, Handlebars, Sequelized, Model View Controller (MVC)
 
 #   Brennen's Role in Development: 
 All

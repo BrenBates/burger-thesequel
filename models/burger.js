@@ -7,32 +7,51 @@
 
 // var orm = require("../config/orm.js");
 
-var burger = {
-  selectAll: function(cb) {
+module.exports = function(sequelize, Datatypes){
 
-    // orm.selectAll("burgers", function(res) {
-    //   cb(res);
+  var Burger = sequelize.define("Burger", {
+      burger_name: {
+        type: Datatypes.STRING,
+      },
+      devoured: {
+       type: Datatypes.BOOLEAN
+      }
 
-
-    });
   },
-  // The variables cols and vals are arrays.
-  insertOne: function(cols, vals, cb) {
-
-
-    // orm.insertOne("burgers", cols, vals, function(res) {
-    //   cb(res);
-
-    });
-  },
-  updateOne: function(objColVals, condition, cb) {
-
-    // orm.updateOne("burgers", objColVals, condition, function(res) {
-    //   cb(res);
-
-    });
+  {
+    timestamps: false
   }
-};
+  )
+  return Burger;
+}
 
-// Export the database functions for the controller (catsController.js).
-module.exports = burger;
+
+// var burger = {
+//   selectAll: function(cb) {
+
+//     // orm.selectAll("burgers", function(res) {
+//     //   cb(res);
+
+
+//     });
+//   },
+//   // The variables cols and vals are arrays.
+//   insertOne: function(cols, vals, cb) {
+
+
+//     // orm.insertOne("burgers", cols, vals, function(res) {
+//     //   cb(res);
+
+//     });
+//   },
+//   updateOne: function(objColVals, condition, cb) {
+
+//     // orm.updateOne("burgers", objColVals, condition, function(res) {
+//     //   cb(res);
+
+//     });
+//   }
+// };
+
+// // Export the database functions for the controller (catsController.js).
+// module.exports = burger;
