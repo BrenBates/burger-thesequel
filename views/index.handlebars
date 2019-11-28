@@ -11,8 +11,8 @@
 
 <div class="clearfix">
 
-<div class = "burgerContainer">
-  {{#each burger}}
+<div id = "burgerContainerOne">
+  {{#each burgers}}
     {{#unless devoured}}
 
     <div class="wrapper">
@@ -33,14 +33,12 @@
 
 </div>
 
-<div class = "burgerContainer">
+<div id = "burgerContainerTwo">
 
 {{!-- Burgers that have been devoured --}}
 
-  {{#each burger}}
+  {{#each burgers}}
     {{#if devoured}}
-
-
 
         <div class="devouredBurger">
 	    {{id}}.{{burger_name}}

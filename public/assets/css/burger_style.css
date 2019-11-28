@@ -15,8 +15,13 @@ li {
   margin-bottom: 5px;
 }
 
-.burgerContainer {
-  width: 50%;
+#burgerContainerOne {
+  width: 56%;
+  float: left;
+}
+
+#burgerContainerTwo {
+  width: 40%;
   float: left;
 }
 
